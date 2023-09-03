@@ -9,7 +9,8 @@ services:
     image: "rancher/k3s:${K3S_VERSION}"
     command:
     - server
-    - '--disable traefik'
+    - --disable
+    - traefik
     tmpfs:
     - /run
     - /var/run
