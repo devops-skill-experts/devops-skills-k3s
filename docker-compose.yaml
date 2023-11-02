@@ -48,6 +48,7 @@ services:
       - ${STORAGE_DIR}:/var/lib/rancher/k3s/storage
       - ${EPHEMERAL_DIR}:/var/lib/kubelet
       - ${LONGHORN_DIR}:/longhorn
+      - ${LONGHORN_LIB_DIR}:/var/lib/longhorn
     environment:
     - K3S_URL=https://server:6443
     - K3S_TOKEN=secret
